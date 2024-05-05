@@ -15,8 +15,8 @@ const iziToastOptions = {
     messageLineHeight: '24px',
     position: 'topRight',
     backgroundColor: '#EF4040',
+    iconUrl:'img/toast-rejected.svg',
 }
-
 
 const options = {
   enableTime: true,
@@ -45,11 +45,6 @@ const hoursUser = document.querySelector('span[data-hours]');
 const minutesUser = document.querySelector('span[data-minutes]');
 const secondsUser = document.querySelector('span[data-seconds]');
 
-
-
-
-
-
 btnStart.addEventListener('click', function (e) {
     const endDate = new Date(userSelectedDates).getTime();
     btnStart.disabled = true;
@@ -59,7 +54,6 @@ btnStart.addEventListener('click', function (e) {
         const difference = endDate - nowDate;
         const objDate = convertMs(difference);
         const { days, hours, minutes, seconds } = objDate
-
 
         if (days < 10) {
             daysUser.textContent = `0${days}`;
@@ -82,7 +76,6 @@ btnStart.addEventListener('click', function (e) {
             secondsUser.textContent = seconds;
         }
         
-
         if (difference < 0) {
             clearInterval(timer);
             daysUser.textContent = "00";
