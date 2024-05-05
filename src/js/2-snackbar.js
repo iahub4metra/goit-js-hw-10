@@ -42,7 +42,7 @@ formEl.addEventListener('submit', (event) => {
             backgroundColor: "#59A10D",
             progressBarColor: '#B5EA7C',
             position: "topRight",
-            iconUrl: '../img/toast-fulfilled.svg',
+            iconUrl: '/img/toast-fulfilled.svg',
         }))
         .catch(error => iziToast.show({
             message: `${radioState} promise in ${error}ms`,
@@ -50,7 +50,7 @@ formEl.addEventListener('submit', (event) => {
             backgroundColor: "#EF4040",
             progressBarColor: '#FFBEBE',
             position: "topRight",
-            iconUrl:'../img/toast-rejected.svg',
+            iconUrl:'/img/toast-rejected.svg',
         }))
         formEl.reset();
     } 
