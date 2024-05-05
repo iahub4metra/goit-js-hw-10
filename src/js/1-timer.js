@@ -15,7 +15,7 @@ const iziToastOptions = {
     messageLineHeight: '24px',
     position: 'topRight',
     backgroundColor: '#EF4040',
-    iconUrl:'../img/toast-rejected.svg',
+    iconUrl:'/img/toast-rejected.svg',
 }
 
 const options = {
